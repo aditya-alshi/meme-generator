@@ -1,26 +1,27 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
 }
 
-:root{
+:root {
     --gradient: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
 }
 
-body{
+body {
     font-family: "Karla", sans-serif;
-    
+
 }
+
 /* ---------------------------------------------------------------------- */
 
 /* Header */
 
-.header-image{
+.header-image {
     height: 26px;
     width: 31px;
 }
 
-.header-wrapper{
+.header-wrapper {
     background: var(--gradient);
     color: #FFFFFF;
     display: flex;
@@ -28,7 +29,7 @@ body{
     padding: 20px;
 }
 
-.header-heading{
+.header-heading {
     font-style: normal;
     font-weight: 700;
     font-size: 20.7482px;
@@ -37,7 +38,7 @@ body{
     margin-left: 8px;
 }
 
-.header-Course{
+.header-Course {
     margin-left: auto;
     font-style: normal;
     font-weight: 500;
@@ -50,23 +51,23 @@ body{
 
 /* Meme-main */
 
-main{
+main {
     padding: 36px;
 }
 
-.form-wrapper{
+.form-wrapper {
     display: grid;
     grid-template: 40px 40px / 1fr 1fr;
     gap: 17px;
 }
 
-.form--input{
+.form--input {
     text-indent: 5px;
     border: 1px solid #D5D4D8;
     border-radius: 5px;
 }
 
-.form--button{
+.form--button {
     border-radius: 5px;
     grid-column: 1 / -1;
     cursor: pointer;
@@ -78,18 +79,51 @@ main{
     line-height: 19px;
     /* identical to box height */
     text-align: center;
-    
+
 
     color: #FFFFFF;
 }
 
-.img-wrapper{
+.img-wrapper {
+    position: relative;
     margin-top: 5px;
     /* max-width: 100%; */
     display: flex;
     justify-content: center;
 }
 
-.meme--image{
+.meme--image {
     max-width: 100%;
+}
+
+.image-text {
+    width: 80%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 2em;
+    font-family: impact, sans-serif;
+    color: #FFFFFF;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-shadow:
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.image--top--text {
+    position: absolute;
+    top: 20px;
+}
+
+.image--bottom--text {
+    position: absolute;
+    bottom: 20px;
 }
